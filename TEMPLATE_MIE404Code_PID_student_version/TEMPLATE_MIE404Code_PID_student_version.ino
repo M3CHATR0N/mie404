@@ -45,6 +45,9 @@ long t_last_PID = 0;
 int T_sample = 20;                                        // sample time in milliseconds (ms)
 int T_print = 1000;                                       // sample print to monitor time in milliseconds (ms)
 
+// ==================INSERT DESIRED SETPOINT ANGLE HERE================== //
+double setpoint_angle = 26;                        
+
 //---------------------PID VARIABLES----------------------//
 // Define variables for the output of the encoder(sensed_output), angle output of the encoder(sensed_output converted to angle), and error w.r.t the setpoint
 double sensed_output, error, sensed_angle;                
@@ -57,9 +60,6 @@ long control_signal;
 int max_control = 1700;
 int min_control = 1000; 
 
-// ==================INSERT DESIRED SETPOINT ANGLE HERE================== //
-double setpoint_angle = 26;                        
-   
 // ==================INSERT CONTROL GAINS HERE=========== 
 double Kp = 0.8;                                          // proportional gain
 double Ki = 0.003;                                        // integral gain in [ms^-1]
