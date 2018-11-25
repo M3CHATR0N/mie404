@@ -53,6 +53,7 @@ int T_sample = 10;                                        // sample time in mill
 int max_control = 1700;
 int min_control = 1000; 
 
+
 // ==================INSERT DESIRED SETPOINT ANGLE HERE================== //
                       
    
